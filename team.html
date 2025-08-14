@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/team.css">
+  <style>
+    body {
+      background-color: #c0e6e8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Menú */
+    .navbar {
+      background-color: #333;
+      padding: 1rem;
+      text-align: center;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar ul li {
+      margin: 0 10px;
+    }
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Título */
+    .section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Tarjetas de equipo */
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1.6rem;
+      padding: 20px;
+    }
+    .card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(17,17,17,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card__content {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card__content h2 {
+      margin-bottom: .25rem;
+    }
+    .card__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background: linear-gradient(90deg,#2e7d32 0%, #388e3c 100%);
+      transition: transform 0.5s ease;
+      color: #fff;
+    }
+    .overlay-inner {
+      max-width: 60%;
+    }
+    .card__overlay--slide {
+      transform: translateX(0);
+    }
+    .card:hover .card__overlay--slide {
+      transform: translateX(-100%);
+    }
+    @media (max-width: 640px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+      .overlay-inner {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menú -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="map.html">Map</a></li>
+  </ul>
+</nav>
+
+<!-- Sección principal -->
+<section class="section">
+  <h1>Nuestro Equipo</h1>
+  <p>Conoce a las personas que hacen posible nuestro trabajo.</p>
+</section>
+
+<!-- Tarjetas de miembros -->
+<main class="wrap">
+
+  <section class="card">
+    <div class="card__media">
+      <img src="img/miembro1.jpg" alt="Miembro 1">
+    </div>
+    <div class="card__content">
+      <h2>María López</h2>
+      <p>CEO & Fundadora. Apasionada por la innovación y el liderazgo.</p>
+    </div>
+    <div class="card__overlay card__overlay--slide">
+      <div class="overlay-inner">
+        <h3>Contacto</h3>
+        <p>Email: maria@empresa.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card__media">
+      <img src="img/miembro2.jpg" alt="Miembro 2">
+    </div>
+    <div class="card__content">
+      <h2>Carlos Pérez</h2>
+      <p>Desarrollador Senior. Experto en soluciones web y móviles.</p>
+    </div>
+    <div class="card__overlay card__overlay--slide">
+      <div class="overlay-inner">
+        <h3>Contacto</h3>
+        <p>Email: carlos@empresa.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card__media">
+      <img src="img/miembro3.jpg" alt="Miembro 3">
+    </div>
+    <div class="card__content">
+      <h2>Laura Gómez</h2>
+      <p>Diseñadora Gráfica. Creatividad y estética en cada proyecto.</p>
+    </div>
+    <div class="card__overlay card__overlay--slide">
+      <div class="overlay-inner">
+        <h3>Contacto</h3>
+        <p>Email: laura@empresa.com</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
