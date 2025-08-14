@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <style>
+    .portfolio-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .portfolio-item {
+      text-align: center;
+    }
+
+    .portfolio-item img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .portfolio-item p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="map.html">Map</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <h1>Our Portfolio</h1>
+  <p>Aquí van las imágenes de tu portafolio.</p>
+
+  <div class="portfolio-container">
+    <div class="portfolio-item">
+      <a href="presentacion1.html">
+        <img src="imagenes/1.jpg" alt="Presentación 1">
+        <p>Presentación 1</p>
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="presentacion2.html">
+        <img src="imagenes/01.jpg" alt="Presentación 2">
+        <p>Presentación 2</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
