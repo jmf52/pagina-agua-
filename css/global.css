@@ -1,0 +1,64 @@
+/* global.css */
+/* ======== ESTILOS GENERALES ======== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== MENÚ DE NAVEGACIÓN ======== */
+.navbar {
+  background-color: #333; /* Fondo oscuro */
+  padding: 1rem; /* Espaciado interno */
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none; /* Quita viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Pone los elementos en línea */
+  justify-content: center; /* Centra los enlaces */
+  flex-wrap: wrap; /* Para que no se desborden en pantallas pequeñas */
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Espaciado entre enlaces */
+}
+
+.navbar ul li a {
+  color: white; /* Texto blanco */
+  text-decoration: none; /* Quita subrayado */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 6px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #4CAF50; /* Fondo verde al pasar el mouse */
+  color: white;
+}
+
+/* ======== SECCIONES ======== */
+.section {
+  padding: 3rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
