@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - 16 Imágenes</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: red;
+    }
+
+    .section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .swiper-container {
+      width: 100%;
+      max-width: 900px;
+      height: auto; /* Altura automática según imagen */
+      margin: 40px auto;
+    }
+
+    .slider-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slider-image-wrapper {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #000; /* Fondo negro para espacios vacíos */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain; /* Mantiene toda la imagen visible */
+    }
+
+    .slider-item-content {
+      padding: 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 0.7;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: red;
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="map.html">Map</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección Portafolio -->
+  <section class="section">
+    <h1>Portafolio</h1>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- 16 imágenes -->
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/1.jpg" alt="Imagen 1">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 1</h2>
+            <p>Descripción de la imagen 1</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/2.jpg" alt="Imagen 2">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 2</h2>
+            <p>Descripción de la imagen 2</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/3.jpg" alt="Imagen 3">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 3</h2>
+            <p>Descripción de la imagen 3</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/4.jpg" alt="Imagen 4">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 4</h2>
+            <p>Descripción de la imagen 4</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/5.jpg" alt="Imagen 5">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 5</h2>
+            <p>Descripción de la imagen 5</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/6.jpg" alt="Imagen 6">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 6</h2>
+            <p>Descripción de la imagen 6</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/7.jpg" alt="Imagen 7">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 7</h2>
+            <p>Descripción de la imagen 7</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/8.jpg" alt="Imagen 8">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 8</h2>
+            <p>Descripción de la imagen 8</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/9.jpg" alt="Imagen 9">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 9</h2>
+            <p>Descripción de la imagen 9</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/10.jpg" alt="Imagen 10">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 10</h2>
+            <p>Descripción de la imagen 10</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/11.jpg" alt="Imagen 11">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 11</h2>
+            <p>Descripción de la imagen 11</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/12.jpg" alt="Imagen 12">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 12</h2>
+            <p>Descripción de la imagen 12</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/13.jpg" alt="Imagen 13">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 13</h2>
+            <p>Descripción de la imagen 13</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/14.jpg" alt="Imagen 14">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 14</h2>
+            <p>Descripción de la imagen 14</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/15.jpg" alt="Imagen 15">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 15</h2>
+            <p>Descripción de la imagen 15</p>
+          </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="imagenes/16.jpg" alt="Imagen 16">
+          </div>
+          <div class="slider-item-content">
+            <h2>Imagen 16</h2>
+            <p>Descripción de la imagen 16</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botones -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mi Sitio Web</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      speed: 500,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+</body>
+</html>
